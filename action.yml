@@ -1,5 +1,5 @@
 name: "Rebuild Armbian"
-author: "https://github.com/armbian"
+author: "https://github.com/momokind/armbian-build"
 description: "Build Armbian Linux"
 inputs:
 
@@ -85,7 +85,7 @@ inputs:
   armbian_release_body:
     description: "Armbian images"
     required: false
-    default: "Build with [Armbian tools](https://github.com/armbian/build)"
+    default: "Build with [Armbian tools](https://github.com/momokind/armbian-build)"
 
 runs:
   using: "composite"
@@ -121,7 +121,7 @@ runs:
     - name: "Checkout Armbian build framework"
       uses: actions/checkout@v4
       with:
-        repository: armbian/build
+        repository: momokind/armbian-build
         fetch-depth: 0
         clean: false
         path: build

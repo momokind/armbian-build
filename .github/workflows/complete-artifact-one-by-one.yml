@@ -252,6 +252,8 @@ on:
         - xiaomi-umi
         - zeropi
         - z96a-rk3568-laptop
+        - z96a-rk3568-usb302-laptop
+        - z96a-rk3568-usb311-laptop
 jobs:
 
   build:

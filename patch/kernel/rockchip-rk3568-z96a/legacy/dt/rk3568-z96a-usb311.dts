@@ -540,17 +540,6 @@
 &i2c0 {
 	status = "okay";
 
-	fusb0: fusb30x@22 {
-		compatible = "fcs,fusb302";
-		reg = <0x22>;
-		pinctrl-names = "default";
-		pinctrl-0 = <&fusb0_int>;
-		vbus-supply = <&vcc5v0_otg>;
-		interrupt-parent = <&gpio0>;
-		fcs,int_n = <&gpio0 RK_PD5 IRQ_TYPE_LEVEL_LOW>;
-		status = "okay";
-	};
-
 	husb0: husb311@4e {
 		compatible = "hynetek,husb311";
 		reg = <0x4e>;
